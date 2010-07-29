@@ -105,9 +105,9 @@ def preprocess_data(d):
             d.LOCO_TRAINS_INDEXES[loco].append(train_indexes)
 
     print [d.TRAIN_DAY_SEQ['T2'][s] for s in range(len(d.TRAIN_YARD_SEQ['T2']) - 1)]
-    print d.LOCO_TRAIN_SEQ['L23']
-    print d.LOCO_YARD_SEQ['L23']
-    print d.LOCO_DAY_SEQ['L23']
+    #print d.LOCO_TRAIN_SEQ['L23']
+    #print d.LOCO_YARD_SEQ['L23']
+    #print d.LOCO_DAY_SEQ['L23']
 
     ####################
     # d.LOCO_DISTANCE_PREVIOUS[j][s] = distance between s-1 and sth station of loco j

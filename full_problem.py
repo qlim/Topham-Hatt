@@ -1,5 +1,4 @@
 from hatt import HattModel, DataWrapper, preprocess_data, print_model
-from pulp import COIN_CMD
 from pulp.odict import OrderedDict
 
 class FullProblemData(object):
@@ -61,7 +60,7 @@ def main():
     print "building model"
     model = HattModel(data, disabled_constraints=('a', 'f'))
     print "solving"
-    model.solve(COIN_CMD())
+    model.solve()
     print_model(model)
 
 if __name__ == '__main__':
